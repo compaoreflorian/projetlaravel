@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body style="background-image: url(https://img.freepik.com/photos-premium/fond-papier-a4-texture-blanc_53876-163469.jpg)">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+       
+      <li class="breadcrumb-item"><a href="EEA.html">MaFormation</a></li>
+   
+      <li class="breadcrumb-item active" aria-current="page">Biotechnologie</li>
+    </ol>
+  </nav>
+    
+    <div class="container">
+        
+        <div id="courses-list" class="row">
+               <div class="col-md-3">  
+                <div class="card mb-4">     
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrt7_p-fD1OJdTFOc2Lb2YXF4MUPfqN-kr9g&s"class="card-img-top" alt="...">    
+                        <h5 class="card-title">ISO 17025</h5>
+                        <p class="card-text">Apprenez les bases de la programmation avec ce cours interactif.</p>
+                        <p class="card-text">Durée : 4 semaines</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                            Inscription
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form id="inscriptionForm">
+                                    <div class="form-group">
+                                      <label for="prenom">Prénom</label>
+                                      <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="nom">Nom</label>
+                                      <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="motdepasse">Mot de passe</label>
+                                      <input type="password" class="form-control" id="motdepasse" placeholder="Entrez votre mot de passe" required>
+                                    </div>
+                                    <button type="button" id="submitBtn" class="btn btn-primary">S'inscrire</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Scripts nécessaires pour Bootstrap -->
+                          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                          
+                          <script>
+                            document.getElementById('submitBtn').addEventListener('click', function() {
+                              // Vérifie la validité du formulaire
+                              var form = document.getElementById('inscriptionForm');
+                              if (form.checkValidity()) {
+                                // Empêche l'envoi du formulaire
+                                event.preventDefault();
+                                // Effectue des actions supplémentaires ici si nécessaire
+                                // ...
+                          
+                                // Redirige vers une autre page
+                                window.location.href = 'page_de_confirmation.html'; // Remplacez 'page_de_confirmation.html' par l'URL de votre page de destination
+                              } else {
+                                form.reportValidity(); // Affiche les messages de validation du formulaire
+                              }
+                            });
+                          </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">  
+              <div class="card mb-4">     
+                  <div class="card-body">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrl1FlJD_RpBCGclNwFBQGdE6Fe1muI8TIw&s"class="card-img-top" alt="...">    
+                      <h5 class="card-title">HACCP</h5>
+                      <p class="card-text">Approfondissez vos connaissances en sécurité alimentaire avec une formation en HACCP.</p>
+                      <p class="card-text">Durée : 4 semaines</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                        Inscription
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form id="inscriptionForm">
+                                <div class="form-group">
+                                  <label for="prenom">Prénom</label>
+                                  <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="nom">Nom</label>
+                                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="motdepasse">Mot de passe</label>
+                                  <input type="password" class="form-control" id="motdepasse" placeholder="Entrez votre mot de passe" required>
+                                </div>
+                                <button type="button" id="submitBtn" class="btn btn-primary">S'inscrire</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Scripts nécessaires pour Bootstrap -->
+                      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                      
+                      <script>
+                        document.getElementById('submitBtn').addEventListener('click', function() {
+                          // Vérifie la validité du formulaire
+                          var form = document.getElementById('inscriptionForm');
+                          if (form.checkValidity()) {
+                            // Empêche l'envoi du formulaire
+                            event.preventDefault();
+                            // Effectue des actions supplémentaires ici si nécessaire
+                            // ...
+                      
+                            // Redirige vers une autre page
+                            window.location.href = 'page_de_confirmation.html'; // Remplacez 'page_de_confirmation.html' par l'URL de votre page de destination
+                          } else {
+                            form.reportValidity(); // Affiche les messages de validation du formulaire
+                          }
+                        });
+                      </script>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">  
+            <div class="card mb-4">     
+                <div class="card-body">
+                    <img src="data:image/jpeg;base64,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"class="card-img-top" alt="...">    
+                    <h5 class="card-title">Microbiologie</h5>
+                    <p class="card-text">Explorez les secrets du monde microscopique avec une formation en microbiologie."</p>
+                    <p class="card-text">Durée : 4 semaines</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                        Inscription
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form id="inscriptionForm">
+                                <div class="form-group">
+                                  <label for="prenom">Prénom</label>
+                                  <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="nom">Nom</label>
+                                  <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="motdepasse">Mot de passe</label>
+                                  <input type="password" class="form-control" id="motdepasse" placeholder="Entrez votre mot de passe" required>
+                                </div>
+                                <button type="button" id="submitBtn" class="btn btn-primary">S'inscrire</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Scripts nécessaires pour Bootstrap -->
+                      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                      
+                      <script>
+                        document.getElementById('submitBtn').addEventListener('click', function() {
+                          // Vérifie la validité du formulaire
+                          var form = document.getElementById('inscriptionForm');
+                          if (form.checkValidity()) {
+                            // Empêche l'envoi du formulaire
+                            event.preventDefault();
+                            // Effectue des actions supplémentaires ici si nécessaire
+                            // ...
+                      
+                            // Redirige vers une autre page
+                            window.location.href = 'page_de_confirmation.html'; // Remplacez 'page_de_confirmation.html' par l'URL de votre page de destination
+                          } else {
+                            form.reportValidity(); // Affiche les messages de validation du formulaire
+                          }
+                        });
+                      </script>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">  
+          <div class="card mb-4">     
+              <div class="card-body">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQb_yCpT8IEhWgG0lKmiCRohlNYD6skQY_tA&s"class="card-img-top" alt="...">    
+                  <h5 class="card-title">ISO22000</h5>
+                  <p class="card-text">Découvrez le Systéme de mangement de la sécurité des denrézs alimentaire.</p>
+                  <p class="card-text">Durée : 4 semaines</p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                    Inscription
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="inscriptionModal" tabindex=
