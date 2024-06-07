@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offre de Formation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+.material-icons {vertical-align:-14%}
+.card-body {
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond blanche */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    font-family: 'Arial', sans-serif; /* Police par défaut */
+    color: #333; /* Couleur du texte */
+}
+</style>
+  <body style="background-image: url(https://img.freepik.com/photos-premium/fond-papier-a4-texture-blanc_53876-163469.jpg)">
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%;background-color:black;">
+    <h3 class="w3-bar-item">Menu</h3>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Autre filiére
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="biologie.html" class="w3-bar-item w3-button"> Biotechnologie</a></li>
+          <li><a class="dropdown-item" href="phy-chimie.html" class="w3-bar-item w3-button">Physique matriaux</a></li>
+         
+        </ul>
+      </div>
+   
+    <a href="page.html" class="w3-bar-item w3-button">MonCompte
+        
+    </a>
+  </div>
+  
+  <!-- Page Content -->
+  <div style="margin-left:25%">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ma IssatFormation</a>
+
+    
+  </nav>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <i class="material-icons w3-large">home</i>
+      <li class="breadcrumb-item"><a href="autre_page.html">Home</a></li>
+   
+      <li class="breadcrumb-item active" aria-current="page">MaFormation</li>
+    </ol>
+  </nav>
+  
+<div class="containerA"style>
+    <div class="container mt-4">
+        <h1 style="color:rosybrown">Bienvenue à espace MaIssatFormation</h1>
+        <h2> Formez-vous</h2>
+        <p>Faites évoluer votre carriére ou votre activité à votre rythme grâce à des formations flexible et personnalisées,conçues pour vous aider à réussir</p>
+        <p>Rejoignez notre communauté dynamique d'apprenants passionnés et lancez-vous dans votre parcours d'apprentissage dès aujourd'hui ! Que vous soyez débutant ou expert, il y a toujours quelque chose de nouveau à découvrir ici.:</p>
+        <h3>EEA&Tic</h3>
+        <header>
+            
+       
+ 
+    <div class="container">
+        
+       <div id="courses-list" class="row">
+               <div class="col-md-3">  
+                <div class="card mb-4">     
+                    <div class="card-body">
+                        <img src="https://media.istockphoto.com/id/1343617373/photo/matlab-inscription-against-laptop-and-code-background.jpg?s=2048x2048&w=is&k=20&c=tbZrwZGaE7yfgCf2t6KYwRA7qwVWOnd2JaLXMuydE58="class="card-img-top" alt="...">    
+                        <h5 class="card-title">Matlab</h5>
+                        <p class="card-text">Plongez dans les bases de MATLAB pour explorer l'analyse numérique, le traitement du signal et la modélisation mathématique dans un environnement convivial et puissant."</p>
+                        <p class="card-text">Durée : 4 semaines</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                            Inscription
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form id="inscriptionForm">
+                                    <div class="form-group">
+                                      <label for="prenom">Prénom</label>
+                                      <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="nom">Nom</label>
+                                      <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="motdepasse">Mot de passe</label>
+                                      <input type="password" class="form-control" id="motdepasse" placeholder="Entrez votre mot de passe" required>
+                                    </div>
+                                    <button href="ripm.index.html" type="button" id="submitBtn" class="btn btn-primary">S'inscrire</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Scripts nécessaires pour Bootstrap -->
+                          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                          
+                          <script>
+                            document.getElementById('submitBtn').addEventListener('click', function() {
+                              // Vérifie la validité du formulaire
+                              var form = document.getElementById('inscriptionForm');
+                              if (form.checkValidity()) {
+                                // Empêche l'envoi du formulaire
+                                event.preventDefault();
+                                // Effectue des actions supplémentaires ici si nécessaire
+                                // ...
+                          
+                                // Redirige vers une autre page
+                                window.location.href = 'ripm.index.html'; // Remplacez 'page_de_confirmation.html' par l'URL de votre page de destination
+                              } else {
+                                form.reportValidity(); // Affiche les messages de validation du formulaire
+                              }
+                            });
+                          </script>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://formaestro.fr/wp-content/uploads/2023/06/formation-solidworks.jpg"class="card-img-top" alt="...">
+                        <h5 class="card-title">SolideWorks</h5>
+                        <p class="card-text">"Apprenez les bases de SolidWorks pour maîtriser la conception 3D et donner vie à vos idées avec précision et efficacité.".</p>
+                        <p class="card-text">Durée :4semaines</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                            Inscription
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form id="inscriptionForm">
+                                    <div class="form-group">
+                                      <label for="prenom">Prénom</label>
+                                      <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="nom">Nom</label>
+                                      <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="motdepasse">Mot de passe</label>
+                                      <input type="password" class="form-control" id="motdepasse" placeholder="Entrez votre mot de passe" required>
+                                    </div>
+                                    <button type="button" id="submitBtn" class="btn btn-primary">S'inscrire</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Scripts nécessaires pour Bootstrap -->
+                          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                          
+                          <script>
+                            document.getElementById('submitBtn').addEventListener('click', function() {
+                              // Vérifie la validité du formulaire
+                              var form = document.getElementById('inscriptionForm');
+                              if (form.checkValidity()) {
+                                // Empêche l'envoi du formulaire
+                                event.preventDefault();
+                                // Effectue des actions supplémentaires ici si nécessaire
+                                // ...
+                          
+                                // Redirige vers une autre page
+                                window.location.href = 'page_de_confirmation.html'; // Remplacez 'page_de_confirmation.html' par l'URL de votre page de destination
+                              } else {
+                                form.reportValidity(); // Affiche les messages de validation du formulaire
+                              }
+                            });
+                          </script>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">  
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1559819614-81fea9efd090?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJkdWlub3xlbnwwfHwwfHx8MA%3D%3D"class="card-img-top" alt="...">
+                        <h5 class="card-title"> Programer Arduino catre</h5>
+                        <p class="card-text">Explorez les fondamentaux de la programmation et de l'électronique avec Arduino pour créer des projets innovants et interactifs..</p>
+                        <p class="card-text">Durée : 6 semaines</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inscriptionModal">
+                            Inscription
+                          </button>
+                          
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'inscription</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form id="inscriptionForm">
+                                    <div class="form-group">
+                                      <label for="prenom">Prénom</label>
+                                      <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="nom">Nom</label>
+                                      <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="motdepasse">Mot de passe</label>
+                                      <input type="password" class="form-control" id="motdepasse" placeholder="Entrez votre mot de passe" required>
+                                    </div>
+                                    <button type="button" id="submitBtn" class="btn btn-primary">S'inscrire</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Scripts nécessaires pour Bootstrap -->
+                          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                          
+                          <script>
+                            document.getElementById('submitBtn').addEventListener('click', function() {
+                              // Vérifie la validité du formulaire
+                              var form = document.getElementById('inscriptionForm');
+                              if (form.checkValidity()) {
+                                // Empêche l'envoi du formulaire
+                                event.preventDefault();
+                                // Effectue des actions supplémentaires ici si nécessaire
+                                // ...
+                          
+                                // Redirige vers une autre page
+                                window.location.href = 'page_de_confirmation.html'; // Remplacez 'page_de_confirmation.html' par l'URL de votre page de destination
+                              } else {
+                                form.reportValidity(); // Affiche les messages de validation du formulaire
+                              }
+                            });
+                          </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-body">
